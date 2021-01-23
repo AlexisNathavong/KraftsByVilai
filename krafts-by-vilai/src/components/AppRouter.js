@@ -14,29 +14,15 @@ const AppRouter = () => {
 
     return (
 
-        <Router>
-            {/* <div class="ui menu">
-                <div class="header item">
-                    Our Company
-                </div>
-                <a class="item">
-                    About Us
-                </a>
-                <a class="item">
-                    Jobs
-                </a>
-                <a class="item">
-                    Locations
-                </a>
-            </div> */}
+        <Router>  
             <div className='app-router'>
                 <Link to='/'>Home</Link>
-                <Link to='/about-page'>About</Link>
+                <Link to='/aboutpage'>About</Link>
             </div>
 
             <Switch>
                 <Route exact path='/' component={HomePage} />
-                <Route path='/about-page' component={AboutPage} />
+                <Route path='/aboutpage' component={AboutPage} />
             </Switch>
         </Router>
     )
